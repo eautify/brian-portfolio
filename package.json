@@ -1,0 +1,26 @@
+{
+  "name": "brian-portfolio",
+  "version": "1.0.0",
+  "description": "![Screenshot](https://i.imgur.com/ajT0H7z.jpeg)",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "astro dev",
+    "build": "astro build",
+    "preview": "astro preview"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/eautify/brian-portfolio.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/eautify/brian-portfolio/issues"
+  },
+  "homepage": "https://github.com/eautify/brian-portfolio#readme",
+  "dependencies": {
+    "astro": "^6.4.8"
+  }
+}
