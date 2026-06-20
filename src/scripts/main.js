@@ -68,17 +68,17 @@ const navActive = function (section) {
 };
 
 const navigationSection = function () {
-  $("#colorlib-page").waypoint(
+  $("#page").waypoint(
     function (direction) {
       if (direction === "down") {
-        navActive("colorlib-page");
+        navActive("page");
       }
     },
     { offset: "-20%" }
   );
 
   const $section = $(
-    'div[id="colorlib-about"], div[id="colorlib-services"], div[id="colorlib-work"], div[id="colorlib-experience"], div[id="colorlib-education"], footer[id="footer"]'
+    'div[id="about"], div[id="services"], div[id="work"], div[id="experience"], div[id="education"], footer[id="footer"]'
   );
 
   $section.waypoint(

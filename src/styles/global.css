@@ -85,18 +85,18 @@ h6 {
   background: #b7c2c2;
 }
 
-#colorlib-page {
+#page {
   position: relative;
   transition: all 0.8s cubic-bezier(0.175, 0.885, 0.32, 1.275);
   transform: scale(1);
 }
 
-.menu-show #colorlib-page {
+.menu-show #page {
   transform: scale(0.99);
   position: relative;
 }
 
-.menu-show #colorlib-page:after {
+.menu-show #page:after {
   position: absolute;
   top: 0;
   bottom: 0;
@@ -224,16 +224,16 @@ h6 {
   color: #fff;
 }
 
-.colorlib-social-icons i {
+.social-icons i {
   font-size: 24px;
   color: #ca82f8;
 }
 
-.colorlib-social-icons a {
+.social-icons a {
   transition: transform 0.3s ease;
 }
 
-.colorlib-social-icons a:hover {
+.social-icons a:hover {
   transform: scale(1.2);
 }
 
