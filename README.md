@@ -29,12 +29,13 @@ A responsive single-page portfolio site to showcase my skills, projects, and exp
 
 ```
 Brian Portfolio/
+├── assets/        → Static files  
 ├── css/           → Stylesheets  
 ├── fonts/         → Web fonts  
-├── images/        → Site images  
+├── images/        → Site static images  
 ├── js/            → Scripts  
+├── saas/          → Bootstrap  
 ├── index.html     → Main entry  
-├── resume.pdf     → My resume  
 └── README.md      → This file  
 ```
 
@@ -57,12 +58,6 @@ Edit `index.html`:
 - Skills: `<div id="colorlib-services">`  
 - Projects: `<div id="colorlib-work">`  
 - Resume: replace `resume.pdf`  
-
----
-
-## 🙌 Credits
-
-Template by [Colorlib](https://colorlib.com) — customized and expanded by me.
 
 ---
 
