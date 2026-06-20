@@ -1,0 +1,84 @@
+---
+import workOne from "../../assets/images/work-1.jpg";
+import workTwo from "../../assets/images/work-2.jpg";
+---
+<section id="colorlib-work">
+  <div class="container">
+    <div class="row text-center">
+      <h2 class="bold">Projects</h2>
+    </div>
+    <div class="row">
+      <div class="col-md-12 col-md-offset-0 text-center animate-box intro-heading">
+        <span>Portfolio</span>
+        <h2>My Work</h2>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-md-12">
+        <div class="rotate">
+          <h2 class="heading">Portfolio</h2>
+        </div>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col-md-12">
+        <div class="work-entry-flex animate-box">
+          <div class="col-md-8 work-img" style={`background-image: url(${workOne.src}); background-size: contain;`}></div>
+          <div class="col-md-4 work-desc">
+            <h3>IoT-Enabled Smart Incubator with Computer Vision</h3>
+            <p><strong>University Thesis | Thesis Leader, Project Manager & Systems Architect</strong></p>
+            <ul>
+              <li>Led a multidisciplinary team in building an IoT-enabled smart poultry incubation system.</li>
+              <li>Designed and implemented a full-stack solution using Python, Vue.js, and Arduino C++ for automated environmental control.</li>
+              <li>Developed an R-CNN computer vision model for embryo development monitoring and incubation tracking.</li>
+            </ul>
+
+            <p><strong>Key Technologies:</strong></p>
+            <p class="tech-stack">
+              <span>Python</span>
+              <span>Vue.js</span>
+              <span>Arduino C++</span>
+              <span>R-CNN</span>
+            </p>
+
+            <p class="read">
+              <a href="https://www.nestnet-project.site/" target="_blank" rel="noreferrer" class="btn btn-primary">Live Demo</a>
+            </p>
+            <p class="read">
+              <a href="https://github.com/eautify/INCUBATOR-FE" target="_blank" rel="noreferrer">Frontend Repo</a> |
+              <a href="https://github.com/eautify/INCUBATOR-BE" target="_blank" rel="noreferrer">Backend Repo</a>
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col-md-12">
+        <div class="work-entry-flex animate-box">
+          <div class="col-md-8 work-img-right" style={`background-image: url(${workTwo.src}); background-size: contain;`}></div>
+          <div class="col-md-4 work-desc-left">
+            <h3>Text to Baybayin Translator</h3>
+            <p>
+              A Windows desktop application that translates Filipino text into a custom
+              Baybayin-inspired script. Built with C# and Windows Forms, it uses a dark-mode
+              interface and translation rules tailored for the project.
+            </p>
+
+            <p><strong>Key Technologies:</strong></p>
+            <p class="tech-stack">
+              <span>C#</span>
+              <span>.NET</span>
+              <span>Windows Forms</span>
+            </p>
+
+            <p class="read">
+              <a href="https://github.com/eautify/Filipino-to-Baybayin" target="_blank" rel="noreferrer" class="btn btn-primary">View on GitHub</a>
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>

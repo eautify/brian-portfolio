@@ -1,0 +1,53 @@
+---
+import "../styles/global.css";
+import ogImage from "../assets/images/portfolio-screenshot.jpg";
+
+const {
+  title = "Brian Balili | Computer Engineer",
+  description = "Brian Balili's portfolio highlights software development, IoT, embedded systems, and technical support experience.",
+  keywords = "portfolio, computer engineering graduate, software developer, python, vue.js, fastapi, iot, embedded systems, technical support",
+  author = "Brian Balili",
+} = Astro.props;
+---
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>{title}</title>
+    <meta name="description" content={description} />
+    <meta name="keywords" content={keywords} />
+    <meta name="author" content={author} />
+    <meta property="og:title" content={title} />
+    <meta property="og:image" content={ogImage.src} />
+    <meta property="og:url" content="" />
+    <meta property="og:site_name" content="Brian Balili Portfolio" />
+    <meta property="og:description" content={description} />
+
+    <link rel="icon" href="/favicon.ico" />
+
+    <link href="https://fonts.googleapis.com/css?family=Karla:400,700" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css?family=Playfair+Display:400,400i,700" rel="stylesheet" />
+
+    <link rel="stylesheet" href="/css/animate.css" />
+    <link rel="stylesheet" href="/css/icomoon.css" />
+    <link rel="stylesheet" href="/css/bootstrap.css" />
+    <link rel="stylesheet" href="/css/owl.carousel.min.css" />
+    <link rel="stylesheet" href="/css/owl.theme.default.min.css" />
+    <link rel="stylesheet" href="/css/magnific-popup.css" />
+    <script is:inline src="/js/modernizr-2.6.2.min.js"></script>
+  </head>
+  <body>
+    <slot />
+
+    <script is:inline src="/js/jquery.min.js"></script>
+    <script is:inline src="/js/jquery.easing.1.3.js"></script>
+    <script is:inline src="/js/bootstrap.min.js"></script>
+    <script is:inline src="/js/jquery.waypoints.min.js"></script>
+    <script is:inline src="/js/owl.carousel.min.js"></script>
+    <script is:inline src="/js/jquery.magnific-popup.min.js"></script>
+    <script is:inline src="/js/magnific-popup-options.js"></script>
+    <script is:inline src="/js/main.js"></script>
+  </body>
+</html>
