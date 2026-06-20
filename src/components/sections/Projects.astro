@@ -24,7 +24,14 @@ import workTwo from "../../assets/images/work-2.jpg";
     <div class="row">
       <div class="col-md-12">
         <div class="work-entry-flex animate-box">
-          <div class="col-md-8 work-img" style={`background-image: url(${workOne.src}); background-size: contain;`}></div>
+          <div class="col-md-8 work-img">
+            <img
+              class="project-image"
+              src={workOne.src}
+              alt="IoT-Enabled Smart Incubator with Computer Vision"
+              loading="lazy"
+            />
+          </div>
           <div class="col-md-4 work-desc">
             <h3>IoT-Enabled Smart Incubator with Computer Vision</h3>
             <p><strong>University Thesis | Thesis Leader, Project Manager & Systems Architect</strong></p>
@@ -57,7 +64,14 @@ import workTwo from "../../assets/images/work-2.jpg";
     <div class="row">
       <div class="col-md-12">
         <div class="work-entry-flex animate-box">
-          <div class="col-md-8 work-img-right" style={`background-image: url(${workTwo.src}); background-size: contain;`}></div>
+          <div class="col-md-8 work-img-right">
+            <img
+              class="project-image"
+              src={workTwo.src}
+              alt="Text to Baybayin Translator"
+              loading="lazy"
+            />
+          </div>
           <div class="col-md-4 work-desc-left">
             <h3>Text to Baybayin Translator</h3>
             <p>

@@ -438,9 +438,15 @@ header {
 .work-entry-flex .work-img-right {
 	height: 450px;
 	display: block;
-	background-size: cover;
-	background-position: center center;
-	background-repeat: no-repeat;
+	overflow: hidden;
+}
+
+.work-entry-flex .work-img img,
+.work-entry-flex .work-img-right img {
+	width: 100%;
+	height: 100%;
+	object-fit: contain;
+	display: block;
 }
 
 .work-entry-flex .work-img {
