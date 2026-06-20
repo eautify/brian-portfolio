@@ -1,6 +1,6 @@
 # Brian Balili – Portfolio Website
 
-![Screenshot](https://i.imgur.com/KAcgYEW.jpeg)
+![Screenshot](https://i.imgur.com/ajT0H7z.jpeg)
 
 A responsive single-page portfolio site to showcase my skills, projects, and experience as an aspiring software developer.
 
