@@ -81,68 +81,6 @@
 		}
 	};
 
-	// Owl Carousel
-	var owlCarouselFeatureSlide = function() {
-		var owl = $('.owl-carousel1');
-		owl.owlCarousel({
-			animateOut: 'fadeOut',
-		   animateIn: 'fadeIn',
-		   autoplay: true,
-		   loop:true,
-		   margin:0,
-		   nav:true,
-		   dots: false,
-		   autoHeight: true,
-		   responsive:{
-		      0:{
-		         items:1
-		      },
-		      600:{
-		         items:2
-		      },
-		      1000:{
-		         items:3
-		      }
-		   },
-		   navText: [
-		      "<i class='icon-arrow-left3 owl-direction'></i>",
-		      "<i class='icon-arrow-right3 owl-direction'></i>"
-	     	]
-		});
-		var owl2 = $('.owl-carousel');
-		owl2.owlCarousel({
-			animateOut: 'fadeOut',
-		   animateIn: 'fadeIn',
-		   autoplay: true,
-		   loop:true,
-		   margin:0,
-		   nav:false,
-		   dots: true,
-		   autoHeight: true,
-		   items: 1,
-		   navText: [
-		      "<i class='icon-arrow-left3 owl-direction'></i>",
-		      "<i class='icon-arrow-right3 owl-direction'></i>"
-	     	]
-		});
-		var owl3 = $('.owl-carousel3');
-		owl3.owlCarousel({
-			animateOut: 'fadeOut',
-		   animateIn: 'fadeIn',
-		   autoplay: true,
-		   loop:true,
-		   margin:0,
-		   nav:false,
-		   dots: false,
-		   autoHeight: true,
-		   items: 1,
-		   navText: [
-		      "<i class='icon-arrow-left3 owl-direction'></i>",
-		      "<i class='icon-arrow-right3 owl-direction'></i>"
-	     	]
-		});	
-	};
-
 	// Smooth Scrolling
 	var smoothScroll = function() {
 		$('a[href*="#"]')
@@ -212,7 +150,6 @@
 		burgerMenu();
 		counterWayPoint();
 		contentWayPoint();
-		owlCarouselFeatureSlide();
 
 		// Add these two new lines
 		smoothScroll();
