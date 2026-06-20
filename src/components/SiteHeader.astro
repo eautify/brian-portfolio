@@ -2,10 +2,62 @@
   <div class="container">
     <div class="row">
       <div class="col-md-12">
-        <div class="colorlib-navbar-brand">
-          <a class="colorlib-logo" href="/"><span>B R</span><span>Y N</span></a>
+        <div class="navbar-brand">
+          <a class="logo" href="/"><span>B R</span><span>Y N</span></a>
         </div>
       </div>
     </div>
   </div>
 </header>
+
+<style>
+  header {
+    padding: 2em 0;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 9;
+    margin: 0 auto;
+  }
+
+  @media screen and (max-width: 768px) {
+    header {
+      padding: 2em 0;
+    }
+  }
+
+  header .navbar-brand {
+    float: left;
+  }
+
+  header .navbar-brand .logo {
+    font-size: 20px;
+    text-transform: uppercase;
+    color: #000;
+    font-weight: 400;
+    letter-spacing: 5px;
+    padding: 7px;
+    border: 1px solid #000;
+    display: block;
+    text-align: center;
+    background: #000;
+  }
+
+  header .navbar-brand .logo span {
+    display: block;
+    margin-bottom: 0;
+    line-height: 1.2;
+    color: #fff;
+  }
+
+  header .navbar-brand .logo:hover {
+    text-decoration: none !important;
+  }
+
+  header .navbar-brand .logo:active,
+  header .navbar-brand .logo:focus {
+    outline: none;
+    text-decoration: none;
+  }
+</style>

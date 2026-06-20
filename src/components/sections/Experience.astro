@@ -1,4 +1,4 @@
-<section id="colorlib-experience">
+<section id="experience">
   <div class="container">
     <div class="row text-center">
       <h2 class="bold">Experience</h2>
@@ -48,3 +48,88 @@
     </div>
   </div>
 </section>
+
+<style>
+  #experience {
+    padding: 10em 0;
+    clear: both;
+    position: relative;
+  }
+
+  @media screen and (max-width: 768px) {
+    #experience {
+      padding: 5em 0;
+    }
+  }
+
+  .experience-entry {
+    background: #fff;
+    padding: 2.5em;
+    border: 1px solid #f0f0f0;
+    border-radius: 4px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.03);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+
+  .experience-entry:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.08);
+  }
+
+  .experience-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    border-bottom: 1px solid #f0f0f0;
+    padding-bottom: 1.5em;
+    margin-bottom: 1.5em;
+  }
+
+  .experience-header .company-name h3 {
+    font-size: 24px;
+    font-weight: 700;
+    font-family: "Karla", Arial, sans-serif;
+    color: #000;
+    margin: 0;
+  }
+
+  .experience-header .company-name h4 {
+    font-size: 16px;
+    color: #888;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-weight: 700;
+    margin: 5px 0 0 0;
+  }
+
+  .experience-header .date span {
+    font-size: 14px;
+    font-weight: 600;
+    color: #ca82f8;
+    background: #f8f0ff;
+    padding: 5px 10px;
+    border-radius: 4px;
+  }
+
+  .experience-body h4 {
+    font-size: 16px;
+    font-weight: 700;
+    color: #000;
+    margin-top: 1.5em;
+    margin-bottom: 1em;
+  }
+
+  .experience-body p {
+    color: #666;
+  }
+
+  .experience-body ul {
+    padding-left: 20px;
+    margin-bottom: 1.5em;
+  }
+
+  .experience-body .tech-stack {
+    margin-top: 1em;
+  }
+</style>

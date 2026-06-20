@@ -1,4 +1,4 @@
-<section id="colorlib-services">
+<section id="services">
   <div class="container">
     <div class="row text-center">
       <h2 class="bold">Skills</h2>
@@ -121,3 +121,206 @@
     </div>
   </div>
 </section>
+
+<style>
+  #services {
+    padding: 10em 0;
+    clear: both;
+    position: relative;
+  }
+
+  @media screen and (max-width: 768px) {
+    #services {
+      padding: 5em 0;
+    }
+  }
+
+  .skill-card-grid {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .skill-card-grid > [class*="col-"] {
+    display: flex;
+    margin-bottom: 30px;
+  }
+
+  .skill-card {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    min-height: 430px;
+    overflow: hidden;
+    background: linear-gradient(180deg, #ffffff 0%, #fbfbfd 100%);
+    border: 1px solid #e8e6ec;
+    border-radius: 8px;
+    padding: 32px;
+    text-align: left;
+    box-shadow: 0 18px 45px rgba(24, 24, 32, 0.06);
+    transition: transform 0.3s ease, box-shadow 0.3s ease, border-color 0.3s ease;
+  }
+
+  .skill-card:before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 4px;
+    background: #ca82f8;
+  }
+
+  .skill-card:hover {
+    transform: translateY(-6px);
+    border-color: rgba(202, 130, 248, 0.42);
+    box-shadow: 0 24px 55px rgba(24, 24, 32, 0.1);
+  }
+
+  .skill-card-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 18px;
+    margin-bottom: 24px;
+  }
+
+  .skill-card .icon {
+    width: 56px;
+    height: 56px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    flex: 0 0 56px;
+    margin-bottom: 0;
+    background: rgba(202, 130, 248, 0.11);
+    border: 1px solid rgba(202, 130, 248, 0.24);
+    border-radius: 8px;
+  }
+
+  .skill-card .icon i {
+    font-size: 28px;
+    color: #9f52d6;
+  }
+
+  .skill-card-label {
+    display: inline-block;
+    margin-bottom: 0;
+    color: #77727d;
+    font-size: 11px;
+    font-weight: 700;
+    letter-spacing: 1.5px;
+    line-height: 1.2;
+    text-align: right;
+    text-transform: uppercase;
+  }
+
+  .skill-card h3 {
+    font-family: "Karla", Arial, sans-serif;
+    font-size: 22px;
+    font-weight: 700;
+    line-height: 1.25;
+    margin-bottom: 14px;
+    color: #1f1f24;
+  }
+
+  .skill-card p {
+    color: #5f5d66;
+    margin-bottom: 22px;
+  }
+
+  .skill-card .desc {
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+  }
+
+  .skill-highlights {
+    padding: 0;
+    margin: 0 0 24px 0;
+    list-style: none;
+    line-height: 1.65;
+  }
+
+  .skill-highlights li {
+    position: relative;
+    padding-left: 18px;
+    margin-bottom: 12px;
+    color: #55525d;
+  }
+
+  .skill-highlights li:before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 12px;
+    width: 6px;
+    height: 6px;
+    background: #ca82f8;
+    border-radius: 50%;
+  }
+
+  .skill-highlights strong {
+    color: #2b2930;
+  }
+
+  .skill-tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+    margin-top: auto;
+  }
+
+  .skill-card--iot:before,
+  .skill-card--iot .skill-highlights li:before {
+    background: #35a39a;
+  }
+
+  .skill-card--iot .icon {
+    background: rgba(53, 163, 154, 0.1);
+    border-color: rgba(53, 163, 154, 0.24);
+  }
+
+  .skill-card--iot .icon i {
+    color: #25857d;
+  }
+
+  .skill-card--data:before,
+  .skill-card--data .skill-highlights li:before {
+    background: #4778c7;
+  }
+
+  .skill-card--data .icon {
+    background: rgba(71, 120, 199, 0.1);
+    border-color: rgba(71, 120, 199, 0.24);
+  }
+
+  .skill-card--data .icon i {
+    color: #3d67aa;
+  }
+
+  .skill-card--support:before,
+  .skill-card--support .skill-highlights li:before {
+    background: #c77a43;
+  }
+
+  .skill-card--support .icon {
+    background: rgba(199, 122, 67, 0.11);
+    border-color: rgba(199, 122, 67, 0.24);
+  }
+
+  .skill-card--support .icon i {
+    color: #a86539;
+  }
+
+  @media screen and (max-width: 768px) {
+    .skill-card {
+      min-height: 0;
+      padding: 28px 24px;
+    }
+
+    .skill-card-header {
+      align-items: flex-start;
+    }
+  }
+</style>

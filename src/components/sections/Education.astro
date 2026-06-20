@@ -1,4 +1,4 @@
-<section id="colorlib-education">
+<section id="education">
   <div class="container">
     <div class="row text-center">
       <h2 class="bold">Education</h2>
@@ -21,6 +21,37 @@
                 <li>Dean's Lister & Academic Achiever</li>
                 <li>CPE Councilor, PCEA Student Council</li>
                 <li>Member, Alliance of Computer Engineering Students</li>
+                                <li>
+                  Final GWA:
+                  <span class="gwa-tooltip-trigger">
+                    <span
+                      id="finalGWA"
+                      class="gwa-value"
+                      tabindex="0"
+                      aria-describedby="gwa-tooltip"
+                    >
+                      1.64
+                    </span>
+                    <span id="gwa-tooltip" class="gwa-tooltip" role="tooltip">
+                      <strong>Total Grade Points:</strong> 284.50<br />
+                      <strong>Total Units:</strong> 173<br />
+                      <strong>Computation:</strong> 284.50 &divide; 173<br />
+                      <strong>Final GWA:</strong> 1.64
+                    </span>
+                  </span>
+                </li>
+              </ul>
+            </div>
+          </li>
+          <li class="animate-box">
+            <div class="timeline-dot"></div>
+            <div class="timeline-content">
+              <h3>Senior High School Diploma<span>(2018 - 2020)</span></h3>
+              <h4>Jose Rizal University</h4>
+              <ul>
+                <li>K to 12 Basic Education Program</li>
+                <li>Academic Strand: Humanities and Social Sciences</li>
+                <li>Member, Humanities and Social Sciences and General Academics Strand (HG) Club</li>
               </ul>
             </div>
           </li>
@@ -29,3 +60,153 @@
     </div>
   </div>
 </section>
+
+<style>
+  #education {
+    padding: 10em 0;
+    clear: both;
+    position: relative;
+    background: #fff;
+    border-top: 1px solid #f0f0f0;
+  }
+
+  @media screen and (max-width: 768px) {
+    #education {
+      padding: 5em 0;
+    }
+  }
+
+  .education-timeline {
+    list-style: none;
+    padding: 20px 0 20px;
+    position: relative;
+  }
+
+  .education-timeline:before {
+    top: 20px;
+    bottom: 20px;
+    position: absolute;
+    content: " ";
+    width: 3px;
+    background-color: #f0f0f0;
+    left: 20px;
+    margin-left: -1.5px;
+  }
+
+  .education-timeline > li {
+    margin-bottom: 20px;
+    position: relative;
+    padding-left: 55px;
+  }
+
+  .education-timeline .timeline-dot {
+    width: 21px;
+    height: 21px;
+    background-color: #ca82f8;
+    border: 3px solid #fff;
+    border-radius: 50%;
+    position: absolute;
+    left: 10px;
+    top: 5px;
+    z-index: 99;
+  }
+
+  .education-timeline .timeline-content {
+    background: #fff;
+    padding: 30px;
+    border: 1px solid #f0f0f0;
+    border-radius: 4px;
+  }
+
+  .education-timeline .timeline-content h3 {
+    font-family: "Karla", Arial, sans-serif;
+    font-size: 22px;
+    font-weight: 700;
+    color: #000;
+    margin-bottom: 5px;
+  }
+
+  .education-timeline .timeline-content h3 span {
+    font-size: 14px;
+    color: #a0a0a0;
+    font-weight: 400;
+  }
+
+  .education-timeline .timeline-content h4 {
+    font-size: 16px;
+    font-weight: 700;
+    color: #808080;
+    margin-top: 0;
+    margin-bottom: 15px;
+  }
+
+  .education-timeline .timeline-content p,
+  .education-timeline .timeline-content ul {
+    color: #666;
+    margin-bottom: 0;
+  }
+
+  .education-timeline .timeline-content ul {
+    padding-left: 20px;
+  }
+
+  
+.gwa-tooltip-trigger {
+	position: relative;
+	display: inline;
+	vertical-align: baseline;
+	line-height: 1;
+	margin-bottom: 0;
+	font-size: inherit;
+	color: inherit;
+}
+
+.gwa-value {
+	display: inline;
+	margin-bottom: 0;
+	font-size: inherit;
+	color: #CA82F8;
+	cursor: help;
+	text-decoration: underline dotted;
+	text-underline-offset: 3px;
+}
+
+.gwa-tooltip {
+	position: absolute;
+	left: 50%;
+	bottom: calc(100% + 12px);
+	transform: translateX(-50%);
+	width: max-content;
+	max-width: 280px;
+	padding: 10px 12px;
+	border-radius: 8px;
+	background: rgba(17, 17, 17, 0.96);
+	color: #fff;
+	font-size: 13px;
+	line-height: 1.5;
+	box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+	opacity: 0;
+	visibility: hidden;
+	pointer-events: none;
+	transition: opacity 0.2s ease, transform 0.2s ease, visibility 0.2s ease;
+	z-index: 20;
+}
+
+.gwa-tooltip::after {
+	content: "";
+	position: absolute;
+	left: 50%;
+	top: 100%;
+	transform: translateX(-50%);
+	border-width: 7px;
+	border-style: solid;
+	border-color: rgba(17, 17, 17, 0.96) transparent transparent transparent;
+}
+
+.gwa-tooltip-trigger:hover .gwa-tooltip,
+.gwa-tooltip-trigger:focus-within .gwa-tooltip {
+	opacity: 1;
+	visibility: visible;
+	transform: translateX(-50%) translateY(-2px);
+}
+</style>
