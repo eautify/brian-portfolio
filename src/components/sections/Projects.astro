@@ -96,3 +96,82 @@ import workTwo from "../../assets/images/work-2.jpg";
     </div>
   </div>
 </section>
+
+<style>
+  #colorlib-work {
+    padding: 10em 0;
+    clear: both;
+    position: relative;
+  }
+
+  @media screen and (max-width: 768px) {
+    #colorlib-work {
+      padding: 5em 0;
+    }
+  }
+
+  .work-entry-flex {
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 5em;
+    width: 100%;
+    float: left;
+  }
+
+  .work-entry-flex .work-img,
+  .work-entry-flex .work-img-right {
+    height: 450px;
+    display: block;
+    overflow: hidden;
+  }
+
+  .work-entry-flex .work-img img,
+  .work-entry-flex .work-img-right img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    display: block;
+  }
+
+  .work-entry-flex .work-img {
+    order: 2;
+  }
+
+  .work-entry-flex .work-desc {
+    order: 1;
+    padding-left: 50px;
+  }
+
+  .work-entry-flex .work-img-right {
+    order: 1;
+  }
+
+  .work-entry-flex .work-desc-left {
+    order: 2;
+    padding-right: 50px;
+  }
+
+  .work-entry-flex .work-desc,
+  .work-entry-flex .work-desc-left {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  @media screen and (max-width: 768px) {
+    .work-entry-flex .work-img,
+    .work-entry-flex .work-img-right,
+    .work-entry-flex .work-desc,
+    .work-entry-flex .work-desc-left {
+      width: 100% !important;
+      order: initial;
+      height: 300px;
+    }
+
+    .work-entry-flex .work-desc,
+    .work-entry-flex .work-desc-left {
+      height: auto;
+      padding: 30px 15px;
+    }
+  }
+</style>

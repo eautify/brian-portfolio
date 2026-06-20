@@ -8,3 +8,77 @@
     <li><a href="#footer" data-nav-section="contact"><span>Contact</span></a></li>
   </ul>
 </nav>
+
+<style>
+  #page-nav {
+    position: fixed;
+    top: 50%;
+    right: 0;
+    transform: translateY(-50%);
+    z-index: 1001;
+    padding: 15px 0;
+  }
+
+  #page-nav ul {
+    padding: 0;
+    margin: 0;
+  }
+
+  #page-nav li {
+    padding: 0;
+    margin: 0 0 15px 0;
+    list-style: none;
+    text-align: right;
+  }
+
+  #page-nav li a {
+    display: block;
+    position: relative;
+    width: 40px;
+    height: 12px;
+    transition: 0.5s;
+  }
+
+  #page-nav li a:after {
+    position: absolute;
+    content: "";
+    width: 12px;
+    height: 12px;
+    top: 0;
+    right: 20px;
+    border-radius: 50%;
+    background: transparent;
+    border: 2px solid #a0a0a0;
+    transition: 0.5s;
+  }
+
+  #page-nav li a.active:after {
+    background: #ca82f8;
+    border: 2px solid #ca82f8;
+  }
+
+  #page-nav li a span {
+    position: absolute;
+    right: 50px;
+    top: -6px;
+    background: #000;
+    color: #fff;
+    padding: 4px 10px;
+    font-size: 14px;
+    border-radius: 4px;
+    visibility: hidden;
+    opacity: 0;
+    transition: 0.5s;
+  }
+
+  #page-nav li a:hover span {
+    visibility: visible;
+    opacity: 1;
+  }
+
+  @media screen and (max-width: 768px) {
+    #page-nav {
+      display: none;
+    }
+  }
+</style>
